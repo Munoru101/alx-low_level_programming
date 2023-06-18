@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * void tells C there are no arguments
- * printf prints out to standard output what is in parentheses
+ *void tells C there are no arguments
+ *printf prints out to standard output what is in parentheses
  */
 int main(void)
 {
