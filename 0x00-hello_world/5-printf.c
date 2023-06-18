@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
- * Main - entry point of program
- * void tells C there are no arguments
- * printf prints out to standard output what is in parentheses,also see puts
- * Return: Always 0
+ * main - Entry point
+ * 
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
