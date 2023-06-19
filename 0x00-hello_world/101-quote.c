@@ -1,10 +1,12 @@
 #include <unistd.h>
 
 /**
+ * main -entry point
  * write function is used from the unistd.h header
  * to write the desired message to the standard error
  * that is file descriptor 2
- * Return 1 to indicate an error
+ *
+ * Return: 1 to indicate an error
  */
 int main(void)
 {	
