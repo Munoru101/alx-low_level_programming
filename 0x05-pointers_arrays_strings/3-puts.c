@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * puts - writes the string s and
+ * _puts - writes the string s and
  * a trailing newline to stdout
- * @s: string
+ * @str: string
  * Return: nothing
  */
 
