@@ -12,8 +12,9 @@
 void print_rev(char *str)
 {
 	int n = _strlen(str);
+	int i;
 	
-	for (int i = n-1; i>=0; i--)
+	for (i = n-1; i>=0; i--)
 	{
 		_putchar(str[i]);
 	}
