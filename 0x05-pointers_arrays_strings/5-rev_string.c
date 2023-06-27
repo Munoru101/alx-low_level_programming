@@ -8,14 +8,17 @@
  * @n: length of string
  * Return: nothing.
  */
-
 void rev_string(char *s)
+
 {
 	int n = strlen(s);
-	int i, j;
+	int *i, *j;
+	
+	i = &n;
+	j = &n-1;
 
 	for(i = 0, j = n -1; i < j; i++, j--)
 	{
-		swap_int(&i, &j);
+		swap_int([i], [j]);
 	}
 }	
