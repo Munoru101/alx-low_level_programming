@@ -3,14 +3,13 @@
 
 /**
  * print_array - a function that prints
- * @n: elements of array to be printed
+ * @n: elements in array to be printed
  * @a: pointer to array
- * Return: nothing
+ * return: nothing
  */
 
 void print_array(int *a, int n)
-{	
-	int i;
+{	int i;
 	
 	for (i = 0; i < n - 1; i++)
 	{
