@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "main.h"
+
 /**
  * _strcmp is a function that compare string s1 to s2
  * @s1: string 1
