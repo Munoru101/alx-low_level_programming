@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/* main - entry point of the program
+/**
+ * main - function that is entry point of the program
  * Return: Always 0.
  */
 int main(void)
