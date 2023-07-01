@@ -5,13 +5,13 @@
  */
 int main(void)
 {
-        char alphabet;
+ 	char alphabet;
 	char _Alphabet;
-
-        alphabet = 'a';
-        while (alphabet <= 'z')
-        {
-                putchar(alphabet);
+	
+	alphabet = 'a';
+	while (alphabet <= 'z')
+	{
+		putchar(alphabet);
                 alphabet++;
         }
 	_Alphabet = 'A';
