@@ -6,6 +6,7 @@
  * @s1: pointer to destination string
  * @s2: pointer to source string
  * @n: number of bytes from s2 copied
+ * Return: Always 0.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
