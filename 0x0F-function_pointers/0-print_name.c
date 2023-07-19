@@ -9,24 +9,6 @@
  * @f: function pointer
  * Return: Nothing.
  */
-void print_name_as_is(char *name)
-{
-	while (*name != '\0')
-	{
-		_putchar(*name);
-		name++;
-	}
-	_putchar('\n');
-}
-void print_name_uppercase(char *name)
-{
-	while (*name != '\0')
-	{
-		_putchar(toupper(*name));
-		name++;
-	}
-	_putchar('\n');
-}
 void print_name(char *name, void (*f)(char *))
 {
 	f(name);
