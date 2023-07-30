@@ -1,17 +1,21 @@
 #include <stdio.h>
 #include "main.h"
+#include <string.h>
 /**
- * program - that prints its name 
+ * main - program that prints its name
+ * @argc: count of the args supplied to the program
+ * @argv: array of pointers to the strings which are those args 
  * Return: Always 0.
  */
-int main(int argc __attribute__((unused)), char *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
-	char *program_name = argv[0];
+	char *name = argv[0];
+	(void)argc;
 
-	for (i = 0; *program_name != '\0'; i++)
+	for (i = 0; name[i] != '\0'; i++)
 	{
-		_putchar(program_name[i]);
+		_putchar(name[i]);
 	}
 	_putchar('\n');
 	return (0);
