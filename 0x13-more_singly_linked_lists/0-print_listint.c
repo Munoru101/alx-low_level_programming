@@ -9,15 +9,15 @@ typedef struct listint_s
 {
 	int n;
 	struct listint_s *next;
-}	listint_t;
+}listint_t;
 size_t print_listint(const listint_t *h)
 {
 	size_t node_num = 0;
 	const listint_t *current = h;
 	while (current != NULL)
 	{
-		printf("%d", current -> n);
-		current = current -> next;
+		printf("%d", current->n);
+		current = current->next;
 		if (current != NULL)
 		{
 			printf(",");
