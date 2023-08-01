@@ -10,35 +10,17 @@ size_t print_listint(const listint_t *h)
 {
 	size_t node_num = 0;
 	const listint_t *current = h;
-	int tmp, num, digits;
 
 	while (current != NULL)
 	{
-		num = current->n;
-		digits = 1;
-		if (num < 0)
-		{
-			_putchar('-');
-			num = -num;
-		}
-		tmp = num;
-		while (tmp / 10 > 0)
-		{
-			digits *= 10;
-			tmp /= 10;
-		}
-		while (digits > 0)
-		{
-			_putchar('0' + num / digits);
-			num %= digits;
-		}
+		printf("%d", current->n);
 		current = current->next;
 		if (current != NULL)
 		{
-			_putchar(',');
-			node_num++;
+			printf(", ");
 		}
+		node_num++;
 	}
-	_putchar('\n');
+	printf("\n");
 	return (node_num);
 }
