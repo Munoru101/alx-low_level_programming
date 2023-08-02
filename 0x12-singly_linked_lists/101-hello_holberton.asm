@@ -4,7 +4,7 @@ section .text
 	global main
 extern printf
 main:
-	mov rdi, hello
+	mov edi, hello
 	call printf
 
 	mov rax, 60
