@@ -18,6 +18,8 @@ int _strlen_recursion(char *s)
  * @s: the pointer to the string
  * @length: length of s
  * @index: a string index
+ * Return: 1 if s is a palindrome
+ * 0 otherwise
  */
 int palindrome_check(char *s, int length, int index)
 {
