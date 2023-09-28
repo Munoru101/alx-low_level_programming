@@ -1,6 +1,13 @@
 #include "main.h"
 int palindrome_check(char *s, int length, int index);
 int is_palindrome(char *s);
+int _strlen_recursion(char *s)
+{
+	if (*s == '\0')
+		return (0);
+	else
+		return (1 + _strlen_recursion(s + 1));
+}
 /**
  * palindrome-check - checks if a string is a palindrome
  * @s: the pointer to the string
