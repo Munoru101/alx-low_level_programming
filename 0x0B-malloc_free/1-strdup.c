@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * _strdup - function that returns a pointer to a 
+ * _strdup - function that returns a pointer to a
  * new string which is a duplicate of a string.
  * @str: the original string to be duplicated
  * Return: on success, a pointer to duplicated string
