@@ -1,0 +1,1 @@
+A function pointer, also called a subroutine pointer or procedure pointer, is a pointer referncing executable code, rather than data. Dereferencing the function pointer yields the referenced function, which can be invoked and passed arguments just as in a normal function call.
