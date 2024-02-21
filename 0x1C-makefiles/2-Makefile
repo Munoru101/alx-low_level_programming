@@ -8,6 +8,8 @@ NAME = school
 .PHONY all clean
 all: $(NAME)
 
+-include $(OBJ:.o=.d)
+
 $(NAME): $(OBJ)
 	$(CC) $^ -o $@
 
@@ -15,4 +17,4 @@ $(NAME): $(OBJ)
 	$(CC) -c $< -o $@
 
 clean:
-	rm -f $(OBJ) $(NAME)
+	rm -f $(OBJ) $(NAME) $(OBJ:.o=.d)
