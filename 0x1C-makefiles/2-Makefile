@@ -5,16 +5,15 @@ SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 
-.PHONY all clean
 all: $(NAME)
 
--include $(OBJ:.o=.d)
+%.o: %.c
+	$(CC) -c $< -o $@
 
 $(NAME): $(OBJ)
 	$(CC) $^ -o $@
 
-%.o: %.c
-	$(CC) -c $< -o $@
+$(OBJ): $(SRC)
 
 clean:
 	rm -f $(OBJ) $(NAME) $(OBJ:.o=.d)
