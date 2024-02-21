@@ -32,7 +32,7 @@ all: $(NAME)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJ)
-	$(CC) $^ -o $@
+	$(CC) $(CFLAGS) $^ -o $@
 
 $(OBJ): $(SRC)
 
