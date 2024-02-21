@@ -3,7 +3,7 @@
 # rules are all
 # variables are none
 
-objects = a.out m.h main.c school.c
+objects = main.c school.c
 
 all: school
 
