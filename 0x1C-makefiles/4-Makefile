@@ -29,19 +29,17 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $^ -o $@
+        $(CC) $(CFLAGS) $^ -o $@
 
 %.o: %.c
-	$(CC) $(FLAGS) -c $< -o $@
-
-$(OBJ): $(SRC)
+        $(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	$(RM) *~ $(NAME)
+        $(RM) *~ $(NAME)
 
 oclean:
-	$(RM) $(OBJ)
+        $(RM) $(OBJ)
 
-fclean: clean oclean
+fclean: oclean clean
 
 re: fclean all
