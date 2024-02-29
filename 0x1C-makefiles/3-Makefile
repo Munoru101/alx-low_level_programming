@@ -1,30 +1,25 @@
-# Makefile with more rules
-# and more variables
-
+# Make file for school executable
 CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm -f
 
-.PHONY all clean oclean fclean re
+.PHONY: all clean oclean fclean re
 
 all: $(NAME)
-
-%.o: %.c
-	$(CC) -c $< -o $@
 
 $(NAME): $(OBJ)
 	$(CC) $^ -o $@
 
-$(OBJ): $(SRC)
+%.o: %.c
+	$(CC) -c $< -o $@
 
 clean:
 	$(RM) *~ $(NAME)
-
 oclean:
 	$(RM) $(OBJ)
 
-fclean: clean oclean
+fclean: oclean  clean
 
 re: fclean all
